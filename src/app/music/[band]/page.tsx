@@ -62,6 +62,7 @@ export default function Band({
                   alt={album.name}
                   className="rounded"
                   height={200}
+                  loading="eager"
                   src={album.image}
                   width={200}
                 />

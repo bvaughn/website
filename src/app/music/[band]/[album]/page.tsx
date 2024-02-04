@@ -27,6 +27,7 @@ export default function Album({
             alt={album.name}
             className="rounded"
             height={100}
+            loading="eager"
             src={album.image}
             width={100}
           />
