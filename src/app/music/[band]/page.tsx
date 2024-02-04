@@ -1,5 +1,5 @@
 import { Main } from "@/app/Main";
-import { SideNav } from "@/app/music/SideNav";
+import { BandSubNav } from "@/app/music/BandSubNav";
 import { StreamingLinks } from "@/app/music/StreamingLinks";
 import { bands } from "@/app/music/data";
 import { formatReleaseDate } from "@/utils/time";
@@ -19,15 +19,15 @@ export default function Band({
 
   return (
     <>
-      <SideNav currentBandId={band} />
+      <BandSubNav currentBandId={band} />
 
       <Main>
         <p>{description.trim().replace(/\n\s+/g, "\n")}</p>
 
         {members.length > 1 && (
           <section>
-            <h2>Members</h2>
-            <div className="flex flex-row gap-2 items-center">
+            <h2 className="text-center md:text-start">Members</h2>
+            <div className="flex flex-row gap-2 flex-wrap justify-center md:justify-start">
               {members.map((member) => (
                 <div
                   className="flex flex-row gap-1 items-center"
@@ -41,7 +41,9 @@ export default function Band({
                     src={member.image}
                     width={48}
                   />
-                  <span>{member.name}</span> <small>({member.role})</small>
+                  <div className="flex flex-col md:flex-row gap-1 items-start md:items-center">
+                    <span>{member.name}</span> <small>({member.role})</small>
+                  </div>
                 </div>
               ))}
             </div>
@@ -49,11 +51,11 @@ export default function Band({
         )}
 
         <section className="max-w-screen-lg">
-          <h2>Albums</h2>
-          <div>
+          <h2 className="text-center md:text-start">Albums</h2>
+          <div className="flex flex-row gap-2 flex-wrap justify-center md:justify-start">
             {albumsArray.map(([albumId, album]) => (
               <Link
-                className="inline-block mr-1 mb-1"
+                className="inline-block mr-1 mb-1 shrink-0"
                 key={albumId}
                 href={`/music/${band}/${albumId}`}
                 tabIndex={0}
@@ -61,11 +63,11 @@ export default function Band({
                 <Image
                   alt={album.name}
                   className="rounded"
-                  height={200}
+                  height={160}
                   loading="eager"
                   priority
                   src={album.image}
-                  width={200}
+                  width={160}
                 />
                 <div className="align-middle text-black">
                   <span>{album.name}</span>{" "}
@@ -77,13 +79,13 @@ export default function Band({
         </section>
 
         <section className="max-w-screen-lg">
-          <h2>Singles</h2>
+          <h2 className="text-center md:text-start">Singles</h2>
           <ul className="flex flex-col gap-1">
             {tracks
               .sort((a, b) => b.date.getTime() - a.date.getTime())
               .map((track, index) => (
-                <li className="flex flex-row gap-1 items-center">
-                  <div className="w-32 mr-2 flex flex-row gap-1 justify-end">
+                <li className="flex flex-row gap-1 items-center" key={index}>
+                  <div className="w-32 mr-2 flex flex-row gap-1 justify-end shrink-0">
                     <StreamingLinks urls={track.urls} />
                   </div>
                   <Image

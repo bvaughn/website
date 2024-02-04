@@ -2,14 +2,14 @@
 
 import Link from "next/link.js";
 import { usePathname } from "next/navigation";
-import { Icon, IconType } from "../shared/Icon";
+import { Icon, IconType } from "@/components/shared/Icon";
 import { ComponentPropsWithoutRef } from "react";
 
 export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <aside className="flex flex-col items-center h-svh p-2 bg-gray-900 space-y-4">
+    <aside className="flex flex-row md:flex-col items-center gap-4 max-h-svh p-2 bg-gray-900">
       {/*
       <NavigationLink
         active={pathname === "/"}
@@ -65,7 +65,7 @@ function NavigationLink({
       className={`p-1.5 transition-colors duration-200 rounded-lg ${
         active
           ? "text-gray-400 focus:bg-gray-800 focus:outline-none"
-          : "text-blue-400 hover:bg-gray-800 focus:bg-gray-800 focus:outline focus:outline-blue-400"
+          : "text-yellow-400 hover:bg-gray-800 focus:bg-gray-800 focus:outline focus:outline-yellow-400"
       }`}
       {...rest}
     >

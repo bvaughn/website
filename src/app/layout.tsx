@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
-      <body className="m-0 p-0 flex flex-row flex-nowrap overflow-y-auto max-h-svh">
+      <body className="m-0 p-0 flex flex-col md:flex-row flex-nowrap overflow-y-auto max-h-svh">
         <Navigation />
         {children}
       </body>
