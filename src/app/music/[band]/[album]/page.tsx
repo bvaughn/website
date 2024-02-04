@@ -28,6 +28,7 @@ export default function Album({
             className="rounded"
             height={100}
             loading="eager"
+            priority
             src={album.image}
             width={100}
           />
