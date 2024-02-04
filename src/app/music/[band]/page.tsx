@@ -80,7 +80,7 @@ export default function Band({
             {tracks
               .sort((a, b) => b.date.getTime() - a.date.getTime())
               .map((track, index) => (
-                <div className="flex flex-row gap-1 items-center">
+                <li className="flex flex-row gap-1 items-center">
                   <div className="w-32 mr-2 flex flex-row gap-1 justify-end">
                     <StreamingLinks urls={track.urls} />
                   </div>
@@ -95,7 +95,7 @@ export default function Band({
                     <div>{track.name}</div>
                     <small>({formatReleaseDate(track.date)})</small>
                   </div>
-                </div>
+                </li>
               ))}
           </ul>
         </section>
