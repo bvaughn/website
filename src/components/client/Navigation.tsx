@@ -9,7 +9,7 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <aside className="flex flex-col items-center h-screen p-2 bg-gray-900 space-y-4">
+    <aside className="flex flex-col items-center h-svh p-2 bg-gray-900 space-y-4">
       {/*
       <NavigationLink
         active={pathname === "/"}

@@ -8,7 +8,7 @@ export function SideNav({
   currentBandId: keyof typeof bands;
 }) {
   return (
-    <section className="flex-auto h-screen py-4 overflow-y-auto bg-gray-800 shrink-0 max-w-48">
+    <nav className="flex-auto h-svh py-4 overflow-y-auto bg-gray-800 shrink-0 max-w-48">
       <h2 className="px-5 text-lg font-medium text-white">My music</h2>
 
       {bandsArray.map(([bandId, { genre, image, name }]) => (
@@ -40,6 +40,6 @@ export function SideNav({
           </div>
         </a>
       ))}
-    </section>
+    </nav>
   );
 }
