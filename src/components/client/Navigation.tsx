@@ -10,12 +10,14 @@ export function Navigation() {
 
   return (
     <aside className="flex flex-col items-center h-screen p-2 bg-gray-900 space-y-4">
+      {/*
       <NavigationLink
         active={pathname === "/"}
         icon="home"
         title="Home page"
         to="/"
       />
+      */}
       <NavigationLink
         active={pathname.startsWith("/music")}
         icon="music"
@@ -29,13 +31,13 @@ export function Navigation() {
           title="Blog page"
           to="/blog"
         />
-        */}
       <NavigationLink
         active={pathname.startsWith("/contact")}
         icon="contact"
         title="Contact page"
         to="/contact"
       />
+      */}
       <div className="flex-grow" />
       <NavigationLink
         active={false}

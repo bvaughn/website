@@ -1,81 +1,103 @@
+import { SideNav } from "@/app/music/SideNav";
+import { StreamingLinks } from "@/app/music/StreamingLinks";
+import { bands } from "@/app/music/data";
+import { formatReleaseDate } from "@/utils/time";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Band({
   params: { band },
 }: {
   params: {
-    band: string;
+    band: keyof typeof bands;
   };
 }) {
+  const { albums, description, image, members, tracks } = bands[band];
+
+  const albumsArray = Object.entries(albums);
+
   return (
     <>
-      <section className="flex-auto h-screen py-4 overflow-y-auto bg-gray-800 shrink-0">
-        <h2 className="px-5 text-lg font-medium text-white">My music</h2>
+      <SideNav currentBandId={band} />
 
-        <Link
-          active={band === "brian-vaughn"}
-          genre="Rock"
-          image="/images/band-brian-vaughn.jpeg"
-          name="Brian Vaughn"
-          to="/music/brian-vaughn"
-        />
-        <Link
-          active={band === "pilotless-drone"}
-          genre="Progressive Rock"
-          image="/images/band-pilotless-drone.jpeg"
-          name="Pilotless Drone"
-          to="/music/pilotless-drone"
-        />
-        <Link
-          active={band === "pinwurm"}
-          genre="Industrial Rock"
-          image="/images/band-pinwurm.jpeg"
-          name="Pinwurm"
-          to="/music/pinwurm"
-        />
-      </section>
-      <main className="p-4 w-full">Coming soon</main>
+      <main className="p-4 max-w-screen-lg">
+        <p>{description.trim().replace(/\n\s+/g, "\n")}</p>
+
+        {members.length > 1 && (
+          <section>
+            <h2>Members</h2>
+            <div className="flex flex-row gap-2 items-center">
+              {members.map((member) => (
+                <div
+                  className="flex flex-row gap-1 items-center"
+                  key={member.name}
+                >
+                  <Image
+                    alt={member.name}
+                    className="rounded-full mr-1"
+                    height={48}
+                    src={member.image}
+                    width={48}
+                  />
+                  <span>{member.name}</span> <small>({member.role})</small>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <section className="max-w-screen-lg">
+          <h2>Albums</h2>
+          <div>
+            {albumsArray.map(([albumId, album]) => (
+              <Link
+                className="inline-block mr-1 mb-1"
+                key={albumId}
+                href={`/music/${band}/${albumId}`}
+                tabIndex={0}
+              >
+                <Image
+                  alt={album.name}
+                  className="rounded"
+                  height={200}
+                  src={album.image}
+                  width={200}
+                />
+                <div className="align-middle text-black">
+                  <span>{album.name}</span>{" "}
+                  <small>({formatReleaseDate(album.date)})</small>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section className="max-w-screen-lg">
+          <h2>Singles</h2>
+          <ul className="flex flex-col gap-1">
+            {tracks
+              .sort((a, b) => b.date.getTime() - a.date.getTime())
+              .map((track, index) => (
+                <div className="flex flex-row gap-1 items-center">
+                  <div className="w-32 mr-2 flex flex-row gap-1 justify-end">
+                    <StreamingLinks urls={track.urls} />
+                  </div>
+                  <Image
+                    alt={track.name}
+                    className="rounded"
+                    height={48}
+                    src={track.image ?? image}
+                    width={48}
+                  />
+                  <div>
+                    <div>{track.name}</div>
+                    <small>({formatReleaseDate(track.date)})</small>
+                  </div>
+                </div>
+              ))}
+          </ul>
+        </section>
+      </main>
     </>
-  );
-}
-
-function Link({
-  active,
-  genre,
-  image,
-  name,
-  to,
-}: {
-  active: boolean;
-  genre: string;
-  image: string;
-  name: string;
-  to: string;
-}) {
-  return (
-    <a
-      className={`flex items-center w-full px-5 py-2 transition-colors duration-200 gap-x-2 focus:outline-none ${
-        active
-          ? "bg-gray-900 focus:bg-gray-900 "
-          : "hover:bg-gray-900 focus:bg-gray-900"
-      }`}
-      href={to}
-      tabIndex={0}
-    >
-      <Image
-        alt={name}
-        className="object-cover w-8 h-8 rounded-full"
-        height={32}
-        src={image}
-        width={32}
-      />
-
-      <div className="text-left rtl:text-right">
-        <div className="text-sm font-medium capitalize text-white whitespace-nowrap">
-          {name}
-        </div>
-        <div className="text-xs text-gray-400 whitespace-nowrap">{genre}</div>
-      </div>
-    </a>
   );
 }
