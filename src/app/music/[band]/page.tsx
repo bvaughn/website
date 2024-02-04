@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Band({
   params: { band },
 }: {
@@ -60,10 +62,12 @@ function Link({
       href={to}
       tabIndex={0}
     >
-      <img
-        className="object-cover w-8 h-8 rounded-full"
-        src={image}
+      <Image
         alt={name}
+        className="object-cover w-8 h-8 rounded-full"
+        height={32}
+        src={image}
+        width={32}
       />
 
       <div className="text-left rtl:text-right">
