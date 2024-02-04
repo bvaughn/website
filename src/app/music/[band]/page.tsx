@@ -37,6 +37,7 @@ export default function Band({
                     alt={member.name}
                     className="rounded-full mr-1"
                     height={48}
+                    loading="eager"
                     src={member.image}
                     width={48}
                   />
