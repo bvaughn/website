@@ -1,3 +1,4 @@
+import { Main } from "@/app/Main";
 import { SideNav } from "@/app/music/SideNav";
 import { StreamingLinks } from "@/app/music/StreamingLinks";
 import { bands } from "@/app/music/data";
@@ -20,7 +21,7 @@ export default function Band({
     <>
       <SideNav currentBandId={band} />
 
-      <main className="p-4 max-w-screen-lg max-h-screen overflow-y-auto">
+      <Main>
         <p>{description.trim().replace(/\n\s+/g, "\n")}</p>
 
         {members.length > 1 && (
@@ -97,7 +98,7 @@ export default function Band({
               ))}
           </ul>
         </section>
-      </main>
+      </Main>
     </>
   );
 }

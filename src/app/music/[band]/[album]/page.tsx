@@ -5,6 +5,7 @@ import { formatReleaseDate } from "@/utils/time";
 import { bands } from "@/app/music/data";
 import { Album } from "@/app/music/types";
 import { StreamingLinks } from "@/app/music/StreamingLinks";
+import { Main } from "@/app/Main";
 
 export default function Album({
   params: { album: albumId, band: bandId },
@@ -20,7 +21,7 @@ export default function Album({
   return (
     <>
       <SideNav currentBandId={bandId} />
-      <main className="p-4 w-full">
+      <Main>
         <section className="flex flex-row gap-2 mb-2">
           <Image
             alt={album.name}
@@ -51,7 +52,7 @@ export default function Album({
             ))}
           </ol>
         </section>
-      </main>
+      </Main>
     </>
   );
 }
