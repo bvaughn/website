@@ -491,7 +491,7 @@ export const bands = {
       },
       {
         date: parseDateString("2023-12-01"),
-        name: "Appetite",
+        name: "Appetite (IRIS cover)",
         urls: {
           soundcloud: "https://soundcloud.com/pilotlessdrone/appetite",
         },
