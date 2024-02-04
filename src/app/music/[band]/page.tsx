@@ -20,7 +20,7 @@ export default function Band({
     <>
       <SideNav currentBandId={band} />
 
-      <main className="p-4 max-w-screen-lg">
+      <main className="p-4 max-w-screen-lg max-h-screen overflow-y-auto">
         <p>{description.trim().replace(/\n\s+/g, "\n")}</p>
 
         {members.length > 1 && (
