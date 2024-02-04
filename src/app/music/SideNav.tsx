@@ -25,6 +25,7 @@ export function SideNav({
             alt={name}
             className="object-cover w-8 h-8 rounded-full"
             height={32}
+            loading="eager"
             src={image}
             width={32}
           />
