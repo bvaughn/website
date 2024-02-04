@@ -17,9 +17,8 @@ export default async function Blog({
 
   return (
     <main className="py-8 px-5 grow">
-      <h1 className="text-sm font-medium capitalize">{title}</h1>
-
-      <p className="text-xs text-gray-400">{formatRelativeDate(date)}</p>
+      <h1 className="capitalize">{title}</h1>
+      <p className="text-sm text-gray-400">Posted {formatRelativeDate(date)}</p>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </main>
   );

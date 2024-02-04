@@ -1,3 +1,3 @@
 export default function Contact() {
-  return <main className="py-8 px-5">Contact</main>;
+  return <main className="p-4">Contact</main>;
 }

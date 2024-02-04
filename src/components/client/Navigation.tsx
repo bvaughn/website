@@ -9,42 +9,40 @@ export function Navigation() {
   const pathname = usePathname();
 
   return (
-    <aside className="flex flex-col items-center w-16 h-screen py-8 bg-gray-900 border-gray-700">
-      <div className="flex flex-col space-y-8 grow">
-        <NavigationLink
-          active={pathname === "/"}
-          icon="home"
-          title="Home page"
-          to="/"
-        />
-        <NavigationLink
-          active={pathname.startsWith("/music")}
-          icon="music"
-          title="Music page"
-          to="/music/brian-vaughn"
-        />
+    <aside className="flex flex-col items-center h-screen p-2 bg-gray-900 space-y-4">
+      <NavigationLink
+        active={pathname === "/"}
+        icon="home"
+        title="Home page"
+        to="/"
+      />
+      <NavigationLink
+        active={pathname.startsWith("/music")}
+        icon="music"
+        title="Music page"
+        to="/music/brian-vaughn"
+      />
+      {/*
         <NavigationLink
           active={pathname.startsWith("/blog")}
           icon="blog"
           title="Blog page"
           to="/blog"
         />
-        <NavigationLink
-          active={pathname.startsWith("/contact")}
-          icon="contact"
-          title="Contact page"
-          to="/contact"
-        />
-      </div>
-      <div className="flex flex-col space-y-8 ">
-        <a
-          className="p-1.5 transition-colors duration-200 rounded-lg text-blue-400 bg-gray-800"
-          href="https://www.bvaughn.me/resume.pdf"
-          title="Download my resume"
-        >
-          <Icon className="w-6 h-6" type="download-resume" />
-        </a>
-      </div>
+        */}
+      <NavigationLink
+        active={pathname.startsWith("/contact")}
+        icon="contact"
+        title="Contact page"
+        to="/contact"
+      />
+      <div className="flex-grow" />
+      <NavigationLink
+        active={false}
+        icon="download-resume"
+        title="Download my resume"
+        to="https://www.bvaughn.me/resume.pdf"
+      />
     </aside>
   );
 }
@@ -62,11 +60,11 @@ function NavigationLink({
   return (
     <Link
       href={to}
-      className={
+      className={`p-1.5 transition-colors duration-200 rounded-lg ${
         active
-          ? "p-1.5 focus:outline-nones transition-colors duration-200 rounded-lg text-gray-400 hover:bg-gray-800"
-          : "p-1.5 transition-colors duration-200 rounded-lg text-blue-400 bg-gray-800"
-      }
+          ? "text-gray-400 focus:bg-gray-800 focus:outline-none"
+          : "text-blue-400 hover:bg-gray-800 focus:bg-gray-800 focus:outline focus:outline-blue-400"
+      }`}
       {...rest}
     >
       <Icon className="w-6 h-6" type={icon} />
