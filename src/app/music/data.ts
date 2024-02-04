@@ -254,6 +254,75 @@ export const bands = {
           spotify: "https://open.spotify.com/album/2IfQHpEGZ7v7mjMylGpZkw",
         },
       },
+      {
+        date: parseDateString("2016-01-01"),
+        image: "/images/tracks/extraterrestrial-katy-perry.jpeg",
+        name: "Extraterrestrial (Katy Perry cover)",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/extraterrestrial-katy-perry-cover",
+        },
+      },
+      {
+        date: parseDateString("2012-01-01"),
+        image: "/images/tracks/waters-edge-7-mary-3.jpeg",
+        name: "Water's Edge (Seven Mary Three cover)",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/waters-edge-seven-mary-three",
+        },
+      },
+      {
+        date: parseDateString("2015-01-01"),
+        name: "As Long As You Love Me (Justin Bieber cover)",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/as-long-as-you-love-me-justin-bieber-cover",
+        },
+      },
+      {
+        date: parseDateString("2015-01-01"),
+        image: "/images/tracks/your-song-elton-john.jpeg",
+        name: "Your Song (Elton John cover)",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/your-song-elton-john-cover",
+        },
+      },
+      {
+        date: parseDateString("2012-01-01"),
+        image: "/images/tracks/explore-be-curious-cloudkicker.jpeg",
+        name: "Explore, Be Curious (feat. Cloudkicker)",
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/explore_be_curious",
+        },
+      },
+      {
+        date: parseDateString("2012-01-01"),
+        image: "/images/tracks/let-go-frou-frou.jpeg",
+        name: "Let Go (Frou Frou cover)",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/brianvaughn-letgo-froufrou",
+        },
+      },
+      {
+        date: parseDateString("2012-01-01"),
+        image: "/images/tracks/blown-away-shiny-toy-guns.jpeg",
+        name: "Blown Away (Shiny Toy Guns cover)",
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/blown-away",
+        },
+      },
+      {
+        date: parseDateString("2012-01-01"),
+        image: "/images/tracks/living-within-the-shell.jpeg",
+        name: "Living Within the Shell",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/living-within-the-shell",
+        },
+      },
     ],
   },
   "pilotless-drone": {
