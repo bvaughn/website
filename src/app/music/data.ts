@@ -188,10 +188,12 @@ export const bands = {
         },
       },
     },
-    description: `
+    description: [
+      `
       I started writing and recording music when I was 15 years old.
-      Except for my album "Is That What Love Is?", which was recorded in Nashville, TN, all of my songs were written, recorded, and produced in my home studio.
+      Most of the songs below were recorded in my make-shift home studio.
     `,
+    ],
     genre: "Rock",
     image: "/images/bands/brian-vaughn.jpeg",
     members: [
@@ -405,11 +407,15 @@ export const bands = {
         },
       },
     },
-    description: `
-      Pilotless Drone was formed in 2007 in Harrisonburg, Virginia.
-      The band recorded its first album, "The Art of Empty Words", in Nashville, TN in 2008.
-      Only two of the original members remain, Brian and Karl, and they continue to record under the original band name.
+    description: [
+      `
+      Pilotless Drone was formed in 2007 in Virginia.
+      The band recorded its first album, "The Art of Empty Words", in Nashville in 2008.
+      `,
+      `
+      Although they continue to write and record new songs, only two of the original members remain.
     `,
+    ],
     genre: "Progressive Rock",
     image: "/images/bands/pilotless-drone.jpeg",
     members: [
@@ -538,10 +544,12 @@ export const bands = {
         },
       },
     },
-    description: `
-      Pinwurm is an industrial rock collaboration between myself and Igor Rabovsky.
-      Inspired by the music of bands like Nine Inch Nails, Pinwurm is heavy on the synthesizers and layered vocals and light on guitars.
+    description: [
+      `
+      Pinwurm is an industrial rock collaboration, inspired by the music of bands like Nine Inch Nails.
+      Pinwurm is heavy on the synthesizers and layered vocals and light on guitars.
     `,
+    ],
     genre: "Industrial Rock",
     image: "/images/bands/pinwurm.jpeg",
     members: [

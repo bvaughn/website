@@ -29,7 +29,7 @@ export type BandMember = {
 
 export type Band = {
   albums: { [id: string]: Album };
-  description: string;
+  description: string[];
   genre: string;
   image: string;
   members: BandMember[];

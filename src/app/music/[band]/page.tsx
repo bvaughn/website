@@ -22,12 +22,14 @@ export default function Band({
       <BandSubNav currentBandId={band} />
 
       <Main>
-        <p>{description.trim().replace(/\n\s+/g, "\n")}</p>
+        {description.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
 
         {members.length > 1 && (
           <section>
             <h2 className="text-center md:text-start">Members</h2>
-            <div className="flex flex-row gap-2 flex-wrap justify-center md:justify-start">
+            <div className="flex flex-row gap-4 flex-wrap justify-center md:justify-start">
               {members.map((member) => (
                 <div
                   className="flex flex-row gap-1 items-center"
@@ -41,7 +43,7 @@ export default function Band({
                     src={member.image}
                     width={48}
                   />
-                  <div className="flex flex-col md:flex-row gap-1 items-start md:items-center">
+                  <div className="flex flex-col gap-1 items-start md:items-center">
                     <span>{member.name}</span> <small>({member.role})</small>
                   </div>
                 </div>
