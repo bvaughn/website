@@ -1,5 +1,5 @@
 import { Main } from "@/app/Main";
-import { BandSubNav } from "@/app/music/BandSubNav";
+import { BandSubNavigation } from "@/app/music/BandSubNavivation";
 import { StreamingLinks } from "@/app/music/StreamingLinks";
 import { bands } from "@/app/music/data";
 import { formatReleaseDate } from "@/utils/time";
@@ -19,7 +19,7 @@ export default function Band({
 
   return (
     <>
-      <BandSubNav currentBandId={band} />
+      <BandSubNavigation currentBandId={band} />
 
       <Main>
         {description.map((paragraph, index) => (

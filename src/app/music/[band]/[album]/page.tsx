@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BandSubNav } from "@/app/music/BandSubNav";
+import { BandSubNavigation } from "@/app/music/BandSubNavivation";
 import { formatReleaseDate } from "@/utils/time";
 import { bands } from "@/app/music/data";
 import { Album } from "@/app/music/types";
@@ -20,7 +20,7 @@ export default function Album({
 
   return (
     <>
-      <BandSubNav currentBandId={bandId} />
+      <BandSubNavigation currentBandId={bandId} />
 
       <Main>
         <section className="flex flex-row gap-2 mb-2">
