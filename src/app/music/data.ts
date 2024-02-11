@@ -206,6 +206,28 @@ export const bands = {
     name: "Brian Vaughn",
     tracks: [
       {
+        name: "If You Can't Say It",
+        date: parseDateString("2023-02-01"),
+        image: "/images/albums/if-you-cant-say-it.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/if-you-cant-say-it-single/1642244458",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lYSugEv9J0ILAC8vnh-hARHUWlTNlkiTc",
+          soundcloud: "https://soundcloud.com/brianvaughn/if-you-cant-say-it",
+          spotify: "https://open.spotify.com/track/46TvQhL7oV0iTVRQMejy4g",
+        },
+      },
+      {
+        name: "Break the Picture (feat. Thoughts Before Prayers",
+        date: parseDateString("2023-02-01"),
+        image: "/images/albums/break-the-picture.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/thoughts-before-prayers-break-the-picture-feat-brian-vaughn",
+        },
+      },
+      {
         date: parseDateString("2023-01-01"),
         image: "/images/tracks/summer.jpeg",
         name: "Summer",
@@ -323,6 +345,302 @@ export const bands = {
         urls: {
           soundcloud:
             "https://soundcloud.com/brianvaughn/living-within-the-shell",
+        },
+      },
+      {
+        name: "Slipping",
+        date: parseDateString("2022-09-01"),
+        image: "/images/tracks/slipping.jpeg",
+        urls: {
+          appleMusic: "",
+          googleMusic: "",
+          soundcloud: "https://soundcloud.com/brianvaughn/slipping",
+          spotify: "",
+        },
+      },
+      {
+        name: "Fireflies",
+        date: parseDateString("2022-10-01"),
+        image: "/images/tracks/fireflies.jpeg",
+        urls: {
+          appleMusic: "",
+          googleMusic: "",
+          soundcloud: "https://soundcloud.com/brianvaughn/fireflies",
+          spotify: "",
+        },
+      },
+      {
+        name: "It's Always Midnight (feat gh0stmartini)",
+        date: parseDateString("2022-08-01"),
+        image: "/images/tracks/its-always-midnight.jpeg",
+        urls: {
+          appleMusic: "",
+          googleMusic: "",
+          soundcloud: "https://soundcloud.com/brianvaughn/its-always-midnight",
+          spotify: "",
+        },
+      },
+      {
+        name: "If You Believe it (feat gh0stmartini)",
+        date: parseDateString("2022-08-01"),
+        image: "/images/tracks/if-you-believe-it.jpeg",
+        urls: {
+          appleMusic: "",
+          googleMusic: "",
+          soundcloud: "https://soundcloud.com/brianvaughn/if-you-believe-it",
+          spotify: "",
+        },
+      },
+      {
+        name: "About You (feat Hydrofoil",
+        date: parseDateString("2022-07-01"),
+        image: "/images/tracks/about-you.jpeg",
+        urls: {
+          appleMusic: "",
+          googleMusic: "",
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/about-you-final-feat-hydrofoil",
+          spotify: "",
+        },
+      },
+      {
+        name: "Alternate Line",
+        date: parseDateString("2021-03-01"),
+        image: "/images/tracks/alternate-line.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/alternate-line-single/1565643579",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lnp5eQLUe7R6y0zR34oz4sN8Ddx3ZneQc",
+          soundcloud: "https://soundcloud.com/brianvaughn/alternate-line",
+          spotify: "https://open.spotify.com/track/4OkcrEqaw26I6j1yQzUuzA",
+        },
+      },
+      {
+        name: "Fear",
+        date: parseDateString("2021-01-01"),
+        image: "/images/tracks/fear.jpeg",
+        urls: {
+          appleMusic: "https://music.apple.com/us/album/fear-single/1554663866",
+          googleMusic:
+            "https://music.youtube.com/watch?v=NsdwF6_P_0o&si=lAQNXZW-erv2YYrC",
+          soundcloud: "https://soundcloud.com/brianvaughn/fear",
+          spotify: "https://open.spotify.com/track/7cKjCZ7ew1wCzq1jU6BuiH",
+        },
+      },
+      {
+        name: "Airplane",
+        date: parseDateString("2021-01-01"),
+        image: "/images/tracks/airplane.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/airplane-single/1565638673",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lyU2lfMFx7DAKoUCRavZBygT4FhxzZAXg",
+          soundcloud: "https://soundcloud.com/brianvaughn/airplane",
+          spotify: "https://open.spotify.com/track/6yyaEoXD3qiE7OuSY6alle",
+        },
+      },
+      {
+        name: "Lunar Song",
+        date: parseDateString("2021-01-01"),
+        image: "/images/tracks/lunar-song.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/lunar-song-single/1549805827",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_nOPmCkVfP4OHGJYrZ8_aNvRZ9P47ryTtU",
+          soundcloud: "https://soundcloud.com/brianvaughn/lunar-song",
+          spotify: "https://open.spotify.com/track/5E2jW0lMk8hcTmYCft8cHp",
+        },
+      },
+      {
+        name: "Fire",
+        date: parseDateString("2021-01-01"),
+        image: "/images/tracks/fire.jpeg",
+        urls: {
+          appleMusic: "https://music.apple.com/us/album/fire-single/1549297717",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_keJw7-c0G6uItBFFfjZGWxEWvbJfBjQuE",
+          soundcloud: "https://soundcloud.com/brianvaughn/fire",
+          spotify: "https://open.spotify.com/track/4vOjrqwoFpmZsOont1KROC",
+        },
+      },
+      {
+        name: "The Cannon's Mouth",
+        date: parseDateString("2020-12-15"),
+        image: "/images/tracks/the-cannons-mouth.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/the-cannons-mouth/1545068325?i=1545068326",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_mAgJm60BxEK9rHMywfOERV8JlauqWNvF8",
+          soundcloud: "https://soundcloud.com/brianvaughn/the-cannons-mouth",
+          spotify: "https://open.spotify.com/track/0VtvC38A5nUQtDZ4YTfg7t",
+        },
+      },
+      {
+        name: "Uncertainty (feat Ralf Balogh)",
+        date: parseDateString("2020-15-01"),
+        image: "/images/tracks/uncertainty.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/ralf-balogh-feat-brian-vaughn-uncertainty",
+        },
+      },
+      {
+        name: "False Positives (feat Matt Trancho)",
+        date: parseDateString("2020-12-01"),
+        image: "/images/tracks/false-positives.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/matt-trancho-ft-brian-vaughn-false-positives",
+        },
+      },
+      {
+        name: "Wallow (feat MaroXX)",
+        date: parseDateString("2020-11-10"),
+        image: "/images/tracks/wallow.jpeg",
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/wallow",
+        },
+      },
+      {
+        name: "Gravity (Vienna Teng cover)",
+        date: parseDateString("2020-02-01"),
+        image: "/images/tracks/gravity.jpeg",
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/gravity-vienna-teng",
+        },
+      },
+      {
+        name: "Be Happy Again",
+        date: parseDateString("2020-01-01"),
+        image: "/images/tracks/be-happy-again.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/be-happy-again-single/1496868454",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_ngcwb32V8GOOr6lqZFAk4Viq7mcm4Wvek",
+          soundcloud: "https://soundcloud.com/brianvaughn/be-happy-again",
+          spotify: "https://open.spotify.com/track/33WtKEtDip5q02U3zZve8X",
+        },
+      },
+      {
+        name: "Adventure of a Lifetime (Coldplay cover)",
+        date: parseDateString("2020-01-01"),
+        image: "/images/tracks/adventure-of-a-lifetime.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/adventure-of-a-lifetime",
+        },
+      },
+      {
+        name: "Bubblegum",
+        date: parseDateString("2019-12-15"),
+        image: "/images/tracks/bubblegum.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_mlMkS1_9DBw1mHBJzgTcz-WL8fj_RoII8",
+          googleMusic:
+            "https://music.apple.com/us/album/bubblegum-single/1496827575",
+          soundcloud: "https://soundcloud.com/brianvaughn/bubblegum",
+          spotify: "https://open.spotify.com/track/3qNzGvbWQ2TZMcvfzVynSG",
+        },
+      },
+      {
+        name: "Shout (Tears for Fears cover)",
+        date: parseDateString("2020-12-01"),
+        image: "/images/tracks/shout.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/shout-tears-for-fears",
+        },
+      },
+      {
+        name: "Own My Eyes (The Faint cover)",
+        date: parseDateString("2020-11-01"),
+        image: "/images/tracks/own-my-eyes.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/own-my-eyes-the-faint",
+        },
+      },
+      {
+        name: "Be the One (Luna Shadows cover)",
+        date: parseDateString("2020-10-01"),
+        image: "/images/tracks/be-the-one.jpeg",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/be-the-one-luna-shadows",
+        },
+      },
+      {
+        name: "Time (feat Nick Rasmussen)",
+        date: parseDateString("2020-09-01"),
+        image: "/images/tracks/time.jpeg",
+        urls: {
+          appleMusic: "https://music.apple.com/us/album/time-single/1496872556",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_mhFxbj7HBaYZ4F7YyakE5JL4PhvFBtOdg",
+          soundcloud: "https://soundcloud.com/brianvaughn/time",
+          spotify: "https://open.spotify.com/track/7jWz0zUnctJ9DvzvDYXyYK",
+        },
+      },
+      {
+        name: "Grief",
+        date: parseDateString("2019-09-01"),
+        image: "/images/tracks/grief.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/grief-feat-nick-rasmussen-single/1458832157",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_mteUbMJDv-qNKQHCn-jMEBDFJ2qIpiMx4",
+          soundcloud: "https://soundcloud.com/brianvaughn/grief",
+          spotify: "https://open.spotify.com/track/6ZOCkFNSiRgBJ6XoMGoo1g",
+        },
+      },
+      {
+        name: "Nothing for a Man",
+        date: parseDateString("2019-06-01"),
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/nothing-for-a-man",
+        },
+      },
+      {
+        name: "Save Me (Eddie Irvin cover)",
+        date: parseDateString("2019-06-01"),
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/save-me-cover",
+        },
+      },
+      {
+        name: "Welcome to My Head",
+        date: parseDateString("2013-01-01"),
+        image: "/images/tracks/welcome-to-my-head.jpeg",
+        urls: {
+          googleMusic: "https://music.youtube.com/watch?v=c_yVjfk-Pso",
+          soundcloud: "https://soundcloud.com/brianvaughn/welcome-to-my-head",
+        },
+      },
+      {
+        name: "Animal (feat Bradley Vaughn)",
+        date: parseDateString("2012-05-01"),
+        image: "/images/tracks/animal.jpeg",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/animal-single/1458876504",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_n7rw2Pw8zKaSw2uVNeXHCLZmgxNNeZPQo",
+          soundcloud: "https://soundcloud.com/brianvaughn/animal",
+          spotify: "https://open.spotify.com/track/5YRHtU3D4XRHqrwu6Bq9NA",
+        },
+      },
+      {
+        name: "Undependable",
+        date: parseDateString("2013-05-01"),
+        urls: {
+          soundcloud: "https://soundcloud.com/brianvaughn/undependable",
         },
       },
     ],
