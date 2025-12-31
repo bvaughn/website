@@ -6,12 +6,13 @@ import markdownit from "markdown-it";
 import { join } from "path";
 
 export default async function Blog({
-  params: { post: postId },
+  params,
 }: {
   params: {
     post: string;
   };
 }) {
+  const { post: postId } = await params;
   const { date: dateString, html, title } = await getPost(postId);
   const date = new Date(`${dateString} 00:00:00`);
 

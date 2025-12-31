@@ -6,13 +6,14 @@ import { formatReleaseDate } from "@/utils/time";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Band({
-  params: { band },
+export default async function Band({
+  params,
 }: {
   params: {
     band: keyof typeof bands;
   };
 }) {
+  const { band } = await params;
   const { albums, description, image, members, tracks } = bands[band];
 
   const albumsArray = Object.entries(albums);

@@ -1,20 +1,21 @@
+import { Main } from "@/app/Main";
+import { BandSubNavigation } from "@/app/music/BandSubNavivation";
+import { bands } from "@/app/music/data";
+import { StreamingLinks } from "@/app/music/StreamingLinks";
+import type { Album } from "@/app/music/types";
+import { formatReleaseDate } from "@/utils/time";
 import Image from "next/image";
 import Link from "next/link";
-import { BandSubNavigation } from "@/app/music/BandSubNavivation";
-import { formatReleaseDate } from "@/utils/time";
-import { bands } from "@/app/music/data";
-import { Album } from "@/app/music/types";
-import { StreamingLinks } from "@/app/music/StreamingLinks";
-import { Main } from "@/app/Main";
 
-export default function Album({
-  params: { album: albumId, band: bandId },
+export default async function Album({
+  params,
 }: {
   params: {
     album: string;
     band: keyof typeof bands;
   };
 }) {
+  const { album: albumId, band: bandId } = await params;
   const band = bands[bandId];
   const album = band.albums[albumId as keyof typeof band.albums] as Album;
 
