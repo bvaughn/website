@@ -71,7 +71,7 @@ export default function Band({
                   src={album.image}
                   width={160}
                 />
-                <div className="align-middle text-black">
+                <div className="align-middle text-black max-w-[160px]">
                   <span>{album.name}</span>{" "}
                   <small>({formatReleaseDate(album.date)})</small>
                 </div>

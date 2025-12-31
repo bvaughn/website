@@ -4,6 +4,30 @@ import { parseDateString } from "@/utils/time";
 export const bands = {
   "brian-vaughn": {
     albums: {
+      "the-day-after-yesterday": {
+        date: parseDateString("2024-07-26"),
+        image: "/images/albums/the-day-after-yesterday.jpg",
+        name: "The Day After Yesterday",
+        tracks: [
+          "Lunar Song",
+          "Fire",
+          "The Cannon's Mouth",
+          "Summer",
+          "Fireflies",
+          "Home in California",
+          "Fear",
+          "Airplane",
+          "Alternate Line",
+        ],
+        urls: {
+          appleMusic: "https://music.apple.com/us/album/lunar-song/1758196263",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lircOGVfapbq1tI0KXemWn6jPsaDqcYc0",
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/sets/the-day-after-yesterday",
+          spotify: "https://open.spotify.com/album/71zZH6u7cCgdP5Uuk2xWWe",
+        },
+      },
       yesterday: {
         date: parseDateString("2022-01-01"),
         image: "/images/albums/yesterday.jpeg",
@@ -206,9 +230,22 @@ export const bands = {
     name: "Brian Vaughn",
     tracks: [
       {
+        date: parseDateString("2025-09-28"),
+        image: "/images/tracks/you-get-the-love.jpg",
+        name: "You Get the Love",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/you-get-the-love/1843104447",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_liqKrubemdPL7_5DAWERC2VmIS0UMIRZI",
+          soundcloud: "https://soundcloud.com/brianvaughn/you-get-the-love",
+          spotify: "https://open.spotify.com/album/4Wv3vChPwu2wKf0vXj4L2V",
+        },
+      },
+      {
         name: "If You Can't Say It",
         date: parseDateString("2023-02-01"),
-        image: "/images/albums/if-you-cant-say-it.jpeg",
+        image: "/images/tracks/if-you-cant-say-it.jpeg",
         urls: {
           appleMusic:
             "https://music.apple.com/us/album/if-you-cant-say-it-single/1642244458",
@@ -221,7 +258,7 @@ export const bands = {
       {
         name: "Break the Picture (feat. Thoughts Before Prayers",
         date: parseDateString("2023-02-01"),
-        image: "/images/albums/break-the-picture.jpeg",
+        image: "/images/tracks/break-the-picture.jpeg",
         urls: {
           soundcloud:
             "https://soundcloud.com/brianvaughn/thoughts-before-prayers-break-the-picture-feat-brian-vaughn",
