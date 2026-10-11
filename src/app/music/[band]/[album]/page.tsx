@@ -1,62 +1,108 @@
-import { Main } from "@/app/Main";
-import { BandSubNavigation } from "@/app/music/BandSubNavivation";
 import { bands } from "@/app/music/data";
-import { StreamingLinks } from "@/app/music/StreamingLinks";
+import { getSortedAlbums, isBandId } from "@/app/music/selectors";
 import type { Album } from "@/app/music/types";
+import { ListenMenu } from "@/components/client/ListenMenu";
+import { RecordsRow, Section } from "@/components/music";
 import { formatReleaseDate } from "@/utils/time";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
-export default async function Album({
+type Params = Promise<{ album: string; band: string }>;
+
+export function generateStaticParams() {
+  return Object.entries(bands).flatMap(([band, { albums }]) =>
+    Object.keys(albums).map((album) => ({ album, band }))
+  );
+}
+
+export async function generateMetadata({
   params,
 }: {
-  params: {
-    album: string;
-    band: keyof typeof bands;
-  };
-}) {
+  params: Params;
+}): Promise<Metadata> {
   const { album: albumId, band: bandId } = await params;
+  const album = getAlbum(bandId, albumId);
+  return album && isBandId(bandId)
+    ? { title: `${album.name} · ${bands[bandId].name}` }
+    : {};
+}
+
+export default async function AlbumPage({ params }: { params: Params }) {
+  const { album: albumId, band: bandId } = await params;
+  const album = getAlbum(bandId, albumId);
+  if (!album || !isBandId(bandId)) {
+    notFound();
+  }
+
   const band = bands[bandId];
-  const album = band.albums[albumId as keyof typeof band.albums] as Album;
+  const otherAlbums = getSortedAlbums(band).filter(([id]) => id !== albumId);
 
   return (
-    <>
-      <BandSubNavigation currentBandId={bandId} />
-
-      <Main>
-        <section className="flex flex-row gap-2 mb-2">
-          <Image
-            alt={album.name}
-            className="rounded"
-            height={100}
-            loading="eager"
-            priority
-            src={album.image}
-            width={100}
-          />
-          <div className="flex flex-col gap-1">
-            <div className="text-lg font-medium">{album.name}</div>
-            <div>
-              <Link href={`/music/${bandId}`}>{band.name}</Link>
-            </div>
-            <div className="text-sm">
-              Released in {formatReleaseDate(album.date)}
-            </div>
-            <div className="flex flex-row gap-2">
-              <StreamingLinks urls={album.urls} />
+    <main>
+      <section className="flex flex-col gap-6 pb-14 pt-2 sm:flex-row sm:gap-8 sm:pb-[72px] sm:pt-4 lg:gap-12 lg:pb-[88px] lg:pt-8">
+        <Image
+          alt={`${album.name} cover art`}
+          className="aspect-square h-auto w-full self-start rounded-[18px] object-cover sm:w-[320px] sm:rounded-[20px] lg:w-[460px]"
+          height={460}
+          priority
+          src={album.image}
+          width={460}
+        />
+        <div className="flex flex-1 flex-col gap-5">
+          <div>
+            <Link
+              className="eyebrow text-accent hover:underline"
+              href={`/music/${bandId}`}
+            >
+              {band.name}
+            </Link>
+            <h1 className="heading text-[40px] leading-[0.95] sm:text-[56px] lg:text-[72px]">
+              {album.name}
+            </h1>
+            <div className="mt-2 text-subtle">
+              {formatReleaseDate(album.date)}
+              {album.tracks.length > 0 &&
+                ` · ${album.tracks.length} ${
+                  album.tracks.length === 1 ? "song" : "songs"
+                }`}
             </div>
           </div>
-        </section>
-        <section>
-          <ol>
-            {album.tracks.map((track, index) => (
-              <li key={index}>
-                {index + 1}. {track}
-              </li>
-            ))}
-          </ol>
-        </section>
-      </Main>
-    </>
+          <div>
+            <ListenMenu title={album.name} urls={album.urls} />
+          </div>
+          {album.tracks.length > 0 && (
+            <ol className="flex flex-col">
+              {album.tracks.map((track, index) => (
+                <li
+                  className="flex gap-4 border-b border-divider py-2.5"
+                  key={index}
+                >
+                  <span className="w-6 shrink-0 text-right font-mono text-[13px] leading-6 text-subtle">
+                    {index + 1}
+                  </span>
+                  {track}
+                </li>
+              ))}
+            </ol>
+          )}
+        </div>
+      </section>
+
+      {otherAlbums.length > 0 && (
+        <Section title={`More from ${band.name}`}>
+          <RecordsRow albums={otherAlbums} bandId={bandId} />
+        </Section>
+      )}
+    </main>
   );
+}
+
+function getAlbum(bandId: string, albumId: string): Album | undefined {
+  if (!isBandId(bandId)) {
+    return undefined;
+  }
+  const albums: Record<string, Album> = bands[bandId].albums;
+  return Object.hasOwn(albums, albumId) ? albums[albumId] : undefined;
 }

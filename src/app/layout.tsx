@@ -1,13 +1,26 @@
-import { Navigation } from "@/components/client/Navigation";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { SiteHeader } from "@/components/client/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+import type { Metadata, Viewport } from "next";
+import { Familjen_Grotesk, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const sans = Familjen_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const mono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
   title: "Brian Vaughn",
-  description: "My homepage",
+  description: "Songs written and recorded after hours.",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b0b10",
 };
 
 export default function RootLayout({
@@ -16,13 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={`${inter.className} max-h-svh`} lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
-      <body className="m-0 p-0 flex flex-col md:flex-row flex-nowrap overflow-y-auto max-h-svh">
-        <Navigation />
-        {children}
+    <html className={`${sans.variable} ${mono.variable}`} lang="en">
+      <body>
+        <div className="mx-auto max-w-[1200px] px-4 sm:px-8 lg:px-6">
+          <SiteHeader />
+          {children}
+          <SiteFooter />
+        </div>
       </body>
     </html>
   );

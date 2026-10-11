@@ -1,6 +1,7 @@
 export function parseDateString(dateString: string): Date {
   const [_, year, month, day] = dateString.match(/(\d{4})-(\d{2})-(\d{2})/)!;
-  return new Date(parseInt(year), parseInt(month), parseInt(day));
+  // Date months are zero-indexed
+  return new Date(parseInt(year), parseInt(month) - 1, parseInt(day));
 }
 
 export function formatRelativeDate(date: Date): string {

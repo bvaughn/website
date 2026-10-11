@@ -29,7 +29,7 @@ export const bands = {
         },
       },
       yesterday: {
-        date: parseDateString("2022-01-01"),
+        date: parseDateString("2022-11-11"),
         image: "/images/albums/yesterday.jpeg",
         name: "Yesterday",
         tracks: [
@@ -46,12 +46,11 @@ export const bands = {
           googleMusic:
             "https://music.youtube.com/playlist?list=OLAK5uy_lTArUbwzlgm0AHnVJefAfJOcbqPD-jZ1M",
           soundcloud: "https://soundcloud.com/brianvaughn/sets/yesterday",
-          spotify:
-            "https://music.youtube.com/playlist?list=OLAK5uy_lTArUbwzlgm0AHnVJefAfJOcbqPD-jZ1M",
+          spotify: "https://open.spotify.com/album/1wQQr1myWW6nCVu37ezYoT",
         },
       },
       recharge: {
-        date: parseDateString("2022-01-01"),
+        date: parseDateString("2022-04-01"),
         image: "/images/albums/recharge.jpeg",
         name: "Recharge",
         tracks: [
@@ -75,12 +74,11 @@ export const bands = {
           googleMusic:
             "https://music.youtube.com/playlist?list=OLAK5uy_mMBb-HZsPqdFr_Wbz_dSPtup5b1xSuCwE",
           soundcloud: "https://soundcloud.com/brianvaughn/sets/recharge",
-          spotify:
-            "https://music.youtube.com/playlist?list=OLAK5uy_mMBb-HZsPqdFr_Wbz_dSPtup5b1xSuCwE",
+          spotify: "https://open.spotify.com/album/4v3SOSPu2lZOZrN3DHYUil",
         },
       },
       "forgotten-songs": {
-        date: parseDateString("2017-01-01"),
+        date: parseDateString("2017-01-10"),
         image: "/images/albums/forgotten-songs.jpeg",
         name: "Forgotten Songs",
         tracks: [
@@ -98,12 +96,11 @@ export const bands = {
           googleMusic:
             "https://music.youtube.com/playlist?list=OLAK5uy_m8pREuLc09-KrNg-OsB2bvt5bcY9g9v9U",
           soundcloud: "https://soundcloud.com/brianvaughn/sets/forgotten-songs",
-          spotify:
-            "https://music.youtube.com/playlist?list=OLAK5uy_m8pREuLc09-KrNg-OsB2bvt5bcY9g9v9U",
+          spotify: "https://open.spotify.com/album/7wEJ1ywkjK4u7gKJ8Vxj7C",
         },
       },
       "back-roads": {
-        date: parseDateString("2016-01-01"),
+        date: parseDateString("2016-04-01"),
         image: "/images/albums/back-roads.jpeg",
         name: "Back Roads",
         tracks: [
@@ -123,7 +120,7 @@ export const bands = {
         },
       },
       "my-american-guilt": {
-        date: parseDateString("2012-02-01"),
+        date: parseDateString("2012-02-29"),
         image: "/images/albums/my-american-guilt.jpeg",
         name: "My American Guilt",
         tracks: [
@@ -159,7 +156,7 @@ export const bands = {
         },
       },
       "hello-stranger": {
-        date: parseDateString("2011-04-01"),
+        date: parseDateString("2011-04-25"),
         image: "/images/albums/hello-stranger.jpeg",
         name: "Hello, Stranger",
         tracks: [
@@ -218,6 +215,167 @@ export const bands = {
       Most of the songs below were recorded in my make-shift home studio.
     `,
     ],
+    features: [
+      {
+        artists: ["Tristan Armes"],
+        date: parseDateString("2022-10-28"),
+        image: "/images/tracks/warning-sign.jpg",
+        name: "Warning Sign",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/warning-sign-feat-brian-vaughn-single/1648201375",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_m8Fq1Yn2k6kK0b08vNEhk5eX7jBSK2LRE",
+          soundcloud:
+            "https://soundcloud.com/tristanarmes-sc/warning-sign-radio-mix-feat",
+          spotify: "https://open.spotify.com/album/3oqz8N1U51oCamIbRI8NFk",
+        },
+      },
+      {
+        artists: ["CHOKKTAW"],
+        date: parseDateString("2022-08-29"),
+        image: "/images/tracks/reflections.jpg",
+        name: "Reflections",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/reflections-feat-brian-vaughn-single/1642780786",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_laE_nU9T10J_y41bFXOEwxPqbniVkeQbI",
+          soundcloud: "https://soundcloud.com/chokktaw/reflections",
+          spotify: "https://open.spotify.com/album/6j1OfA0YwJ1JwVl2ZSyJfy",
+        },
+      },
+      {
+        artists: ["Cloudive", "Deepinity"],
+        date: parseDateString("2022-08-24"),
+        image: "/images/tracks/tell-me-what-is-love-deepinity-remix.jpg",
+        name: "Tell Me What Is Love (Deepinity Remix)",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/tell-me-what-is-love-deepinity-remix-single/1637266827",
+          soundcloud:
+            "https://soundcloud.com/intricaterecords/cloudive-feat-brian-vaughn-tell-me-what-is-love-deepinity-remix-edit",
+          spotify: "https://open.spotify.com/album/14lCdREbHdEk6hc4rVRn8x",
+        },
+      },
+      {
+        artists: ["Jordo"],
+        date: parseDateString("2022-07-29"),
+        image: "/images/tracks/circles-jordo.jpg",
+        name: "Circles",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/circles-feat-brian-vaughn/1637504087?i=1637504095",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_nTY9TWadRn2i-X9XUhx_UMNJ924YRWtgI",
+          soundcloud:
+            "https://soundcloud.com/jordan-morris-75/jordo-circles-ft-brian-vaughn-first-mix",
+          spotify: "https://open.spotify.com/album/2sSmVxKMqRczdQVTx6CEX0",
+        },
+      },
+      {
+        artists: ["mISHØ"],
+        date: parseDateString("2022-07-22"),
+        image: "/images/tracks/love-me-back.jpg",
+        name: "Love Me Back",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/love-me-back-single/1624470617",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lBgKl5Hq3yYbbfUbcxV3UmGMkXAj_KlpM",
+          soundcloud:
+            "https://soundcloud.com/electronicfuture/misho-brian-vaughn-love-me-back",
+          spotify: "https://open.spotify.com/album/0oukWZcSJS0C0kwIO8A1tw",
+        },
+      },
+      {
+        artists: ["Cloudive"],
+        date: parseDateString("2022-06-24"),
+        image: "/images/tracks/tell-me-what-is-love.jpg",
+        name: "Tell Me What Is Love",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/tell-me-what-is-love-feat-brian-vaughn-ep/1627987150",
+          bandCamp:
+            "https://intricaterecords.bandcamp.com/album/cloudive-tell-me-what-is-love-feat-brian-vaughn",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lXjhQLw5_kl8EXS3kpGr-d19rliLNhKH4",
+          soundcloud:
+            "https://soundcloud.com/intricaterecords/cloudive-feat-brian-vaughn-tell-me-what-is-love-original-mix-edit",
+          spotify: "https://open.spotify.com/album/5vrP4n95AmYivHJ2i2zEHw",
+        },
+      },
+      {
+        artists: ["Scratchcard Glory"],
+        date: parseDateString("2021-11-05"),
+        image: "/images/tracks/you-know-me-better-scratchcard-glory-remix.jpg",
+        name: "You Know Me Better (Scratchcard Glory Remix)",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/you-know-me-better-scratchcard-glory-remix-scratchcard/1590757333",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lbAPPVXyGBL8eVGrpY0hcdxIz5_UiTvmU",
+          spotify: "https://open.spotify.com/album/2fDPig5DCu6Juw6Cw4Nu2T",
+        },
+      },
+      {
+        artists: ["Solar Burst"],
+        date: parseDateString("2021-03-05"),
+        image: "/images/tracks/mesmerized.jpg",
+        name: "Mesmerized",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/mesmerized-single/1552712798",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_n-f3PWiUuY7P_FIebnmZvjLUNh9KHiDiU",
+          soundcloud:
+            "https://soundcloud.com/intricaterecords/solar-burst-feat-brian-2",
+          spotify: "https://open.spotify.com/album/1G4OLSvgyfhgGO6BJHHUEu",
+        },
+      },
+      {
+        // Released on the Mesmerized single, which is what these links point to
+        artists: ["Solar Burst", "Sound Quelle"],
+        date: parseDateString("2021-03-05"),
+        image: "/images/tracks/mesmerized.jpg",
+        name: "Mesmerized (Sound Quelle Remix)",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/mesmerized-single/1552712798",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_n-f3PWiUuY7P_FIebnmZvjLUNh9KHiDiU",
+          soundcloud:
+            "https://soundcloud.com/intricaterecords/solar-burst-feat-brian-1",
+          spotify: "https://open.spotify.com/album/1G4OLSvgyfhgGO6BJHHUEu",
+        },
+      },
+      {
+        artists: ["Hydrophoil"],
+        date: parseDateString("2020-06-05"),
+        image: "/images/tracks/about-you.jpeg",
+        name: "About You",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/about-you-feat-brian-vaughn-single/1515350864",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_kgeZaTLdRgo2_HAGdIcKb5u1ApxKVQ6FY",
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/about-you-final-feat-hydrofoil",
+          spotify: "https://open.spotify.com/album/2fBUsA2UKH7Bv2Hja557jF",
+        },
+      },
+      {
+        artists: ["Thoughts Before Prayers"],
+        date: parseDateString("2020-05-11"),
+        image: "/images/tracks/break-the-picture.jpeg",
+        name: "Break the Picture",
+        urls: {
+          soundcloud:
+            "https://soundcloud.com/brianvaughn/thoughts-before-prayers-break-the-picture-feat-brian-vaughn",
+          spotify: "https://open.spotify.com/album/7J7ZLmpuImPXukRkmevsIN",
+        },
+      },
+    ],
     genre: "Rock",
     image: "/images/bands/brian-vaughn.jpeg",
     members: [
@@ -253,15 +411,6 @@ export const bands = {
             "https://music.youtube.com/playlist?list=OLAK5uy_lYSugEv9J0ILAC8vnh-hARHUWlTNlkiTc",
           soundcloud: "https://soundcloud.com/brianvaughn/if-you-cant-say-it",
           spotify: "https://open.spotify.com/track/46TvQhL7oV0iTVRQMejy4g",
-        },
-      },
-      {
-        name: "Break the Picture (feat. Thoughts Before Prayers",
-        date: parseDateString("2023-02-01"),
-        image: "/images/tracks/break-the-picture.jpeg",
-        urls: {
-          soundcloud:
-            "https://soundcloud.com/brianvaughn/thoughts-before-prayers-break-the-picture-feat-brian-vaughn",
         },
       },
       {
@@ -304,7 +453,7 @@ export const bands = {
         },
       },
       {
-        date: parseDateString("2022-12-01"),
+        date: parseDateString("2022-12-28"),
         image: "/images/tracks/go-easy-on-yourself.jpeg",
         name: "Go Easy on Yourself",
         urls: {
@@ -353,7 +502,8 @@ export const bands = {
       {
         date: parseDateString("2012-01-01"),
         image: "/images/tracks/explore-be-curious-cloudkicker.jpeg",
-        name: "Explore, Be Curious (feat. Cloudkicker)",
+        name: "Explore, Be Curious",
+        artists: ["Cloudkicker"],
         urls: {
           soundcloud: "https://soundcloud.com/brianvaughn/explore_be_curious",
         },
@@ -385,59 +535,53 @@ export const bands = {
         },
       },
       {
+        date: parseDateString("2022-02-25"),
+        image: "/images/tracks/sit-with-the-feelings.jpg",
+        name: "Sit With the Feelings",
+        urls: {
+          appleMusic:
+            "https://music.apple.com/us/album/sit-with-the-feelings-single/1610873814",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_lsVhZ7-bgppKGK4cu5owp6EID8vtsHgx4",
+          soundcloud: "https://soundcloud.com/brianvaughn/sit-with-the-feelings",
+          spotify: "https://open.spotify.com/album/1NvOnolBJaqwPjV6E1BIQ4",
+        },
+      },
+      {
         name: "Slipping",
-        date: parseDateString("2022-09-01"),
+        date: parseDateString("2022-08-10"),
         image: "/images/tracks/slipping.jpeg",
         urls: {
-          appleMusic: "",
-          googleMusic: "",
           soundcloud: "https://soundcloud.com/brianvaughn/slipping",
-          spotify: "",
         },
       },
       {
         name: "Fireflies",
-        date: parseDateString("2022-10-01"),
+        date: parseDateString("2022-08-06"),
         image: "/images/tracks/fireflies.jpeg",
         urls: {
-          appleMusic: "",
-          googleMusic: "",
+          appleMusic:
+            "https://music.apple.com/us/album/fireflies/1758196263?i=1758196268",
           soundcloud: "https://soundcloud.com/brianvaughn/fireflies",
-          spotify: "",
+          spotify: "https://open.spotify.com/track/6g441FICynU79uYNjGFKg8",
         },
       },
       {
-        name: "It's Always Midnight (feat gh0stmartini)",
-        date: parseDateString("2022-08-01"),
+        name: "It's Always Midnight",
+        artists: ["gh0stmartini"],
+        date: parseDateString("2022-07-16"),
         image: "/images/tracks/its-always-midnight.jpeg",
         urls: {
-          appleMusic: "",
-          googleMusic: "",
           soundcloud: "https://soundcloud.com/brianvaughn/its-always-midnight",
-          spotify: "",
         },
       },
       {
-        name: "If You Believe it (feat gh0stmartini)",
-        date: parseDateString("2022-08-01"),
+        name: "If You Believe it",
+        artists: ["gh0stmartini"],
+        date: parseDateString("2022-07-16"),
         image: "/images/tracks/if-you-believe-it.jpeg",
         urls: {
-          appleMusic: "",
-          googleMusic: "",
           soundcloud: "https://soundcloud.com/brianvaughn/if-you-believe-it",
-          spotify: "",
-        },
-      },
-      {
-        name: "About You (feat Hydrofoil",
-        date: parseDateString("2022-07-01"),
-        image: "/images/tracks/about-you.jpeg",
-        urls: {
-          appleMusic: "",
-          googleMusic: "",
-          soundcloud:
-            "https://soundcloud.com/brianvaughn/about-you-final-feat-hydrofoil",
-          spotify: "",
         },
       },
       {
@@ -517,8 +661,9 @@ export const bands = {
         },
       },
       {
-        name: "Uncertainty (feat Ralf Balogh)",
-        date: parseDateString("2020-15-01"),
+        name: "Uncertainty",
+        artists: ["Ralf Balogh"],
+        date: parseDateString("2020-01-15"),
         image: "/images/tracks/uncertainty.jpeg",
         urls: {
           soundcloud:
@@ -526,7 +671,8 @@ export const bands = {
         },
       },
       {
-        name: "False Positives (feat Matt Trancho)",
+        name: "False Positives",
+        artists: ["Matt Trancho"],
         date: parseDateString("2020-12-01"),
         image: "/images/tracks/false-positives.jpeg",
         urls: {
@@ -535,11 +681,13 @@ export const bands = {
         },
       },
       {
-        name: "Wallow (feat MaroXX)",
+        name: "Wallow",
+        artists: ["MaroXX"],
         date: parseDateString("2020-11-10"),
         image: "/images/tracks/wallow.jpeg",
         urls: {
-          soundcloud: "https://soundcloud.com/brianvaughn/wallow",
+          soundcloud:
+            "https://soundcloud.com/marwannouh/wallow-ft-brian-vaughn",
         },
       },
       {
@@ -574,13 +722,13 @@ export const bands = {
       },
       {
         name: "Bubblegum",
-        date: parseDateString("2019-12-15"),
+        date: parseDateString("2019-08-27"),
         image: "/images/tracks/bubblegum.jpeg",
         urls: {
           appleMusic:
-            "https://music.youtube.com/playlist?list=OLAK5uy_mlMkS1_9DBw1mHBJzgTcz-WL8fj_RoII8",
-          googleMusic:
             "https://music.apple.com/us/album/bubblegum-single/1496827575",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_mlMkS1_9DBw1mHBJzgTcz-WL8fj_RoII8",
           soundcloud: "https://soundcloud.com/brianvaughn/bubblegum",
           spotify: "https://open.spotify.com/track/3qNzGvbWQ2TZMcvfzVynSG",
         },
@@ -613,7 +761,8 @@ export const bands = {
         },
       },
       {
-        name: "Time (feat Nick Rasmussen)",
+        name: "Time",
+        artists: ["Nick Rasmussen"],
         date: parseDateString("2020-09-01"),
         image: "/images/tracks/time.jpeg",
         urls: {
@@ -661,7 +810,8 @@ export const bands = {
         },
       },
       {
-        name: "Animal (feat Bradley Vaughn)",
+        name: "Animal",
+        artists: ["Bradley Vaughn"],
         date: parseDateString("2012-05-01"),
         image: "/images/tracks/animal.jpeg",
         urls: {
@@ -684,8 +834,28 @@ export const bands = {
   },
   "pilotless-drone": {
     albums: {
+      ghosts: {
+        date: parseDateString("2026-06-03"),
+        image: "/images/albums/ghosts.jpeg",
+        name: "Ghosts",
+        tracks: [
+          "Rainbow",
+          "Daylight",
+          "Ghosts",
+          "Chatterbox",
+          "Call it in the Air",
+          "Distance Between",
+        ],
+        urls: {
+          appleMusic: "https://music.apple.com/us/album/ghosts-ep/6777911532",
+          googleMusic:
+            "https://music.youtube.com/playlist?list=OLAK5uy_k9ueKro12-fojcOpbLzqafo5NIdbzAWR8",
+          soundcloud: "https://soundcloud.com/pilotlessdrone/sets/ghosts",
+          spotify: "https://open.spotify.com/album/2RyZg0QiwTZD0rajv5FNEA",
+        },
+      },
       elemental: {
-        date: parseDateString("2014-01-01"),
+        date: parseDateString("2014-07-01"),
         image: "/images/albums/elemental.jpeg",
         name: "Elemental",
         tracks: ["Water", "Evolution", "Faultline", "Sky Blue"],
@@ -695,11 +865,12 @@ export const bands = {
           bandCamp: "https://pilotlessdrone.bandcamp.com/album/elemental",
           googleMusic:
             "https://music.youtube.com/playlist?list=OLAK5uy_mhZYc70cJEgWzi84X7eCEwkWSgEkYYIlg",
+          soundcloud: "https://soundcloud.com/pilotlessdrone/sets/elemental",
           spotify: "https://open.spotify.com/album/5tEhNsKeSFvzy2Bd4jvsz3",
         },
       },
       "the-other-road": {
-        date: parseDateString("2013-01-01"),
+        date: parseDateString("2013-01-18"),
         image: "/images/albums/the-other-road.jpeg",
         name: "The Other Road",
         tracks: [
@@ -718,6 +889,8 @@ export const bands = {
           bandCamp: "https://pilotlessdrone.bandcamp.com/album/the-other-road",
           googleMusic:
             "https://music.youtube.com/playlist?list=OLAK5uy_m2Yf6JW9Pokwc_SftOxo6wmTwzVqhj5WY",
+          soundcloud:
+            "https://soundcloud.com/pilotlessdrone/sets/the-other-road",
           spotify: "https://open.spotify.com/album/4V2KKBNo20NiQdwvLAqi56",
         },
       },
@@ -746,7 +919,7 @@ export const bands = {
       "the-art-of-empty-words": {
         date: parseDateString("2008-08-10"),
         image: "/images/albums/the-art-of-empty-words.jpeg",
-        name: "Cloudfist",
+        name: "The Art of Empty Words",
         tracks: [
           "The Last Time",
           "The Art of Empty Words",
@@ -788,7 +961,7 @@ export const bands = {
     name: "Pilotless Drone",
     tracks: [
       {
-        date: parseDateString("2017-01-01"),
+        date: parseDateString("2017-03-06"),
         name: "Backchannels (Shearwater cover)",
         urls: {
           soundcloud: "https://soundcloud.com/pilotlessdrone/backchannels",
@@ -807,7 +980,7 @@ export const bands = {
         },
       },
       {
-        date: parseDateString("2020-01-01"),
+        date: parseDateString("2019-07-23"),
         name: "The Pot (TOOL cover)",
         urls: {
           soundcloud:
@@ -815,12 +988,13 @@ export const bands = {
         },
       },
       {
-        date: parseDateString("2020-01-01"),
+        date: parseDateString("2020-04-23"),
         image: "/images/tracks/rainbow.jpeg",
         name: "Rainbow",
         urls: {
           appleMusic:
-            "https://music.apple.com/us/album/rainbow-single/1510701742",
+            "https://music.apple.com/us/album/rainbow/6777911532?i=6777911533",
+          googleMusic: "https://music.youtube.com/watch?v=Sd-ANzYw1yI",
           soundcloud: "https://soundcloud.com/pilotlessdrone/rainbow",
           spotify: "https://open.spotify.com/album/0Eq8AkyrMAvgZk9WCLZaLX",
         },
@@ -829,8 +1003,7 @@ export const bands = {
         date: parseDateString("2021-01-01"),
         name: "Pull",
         urls: {
-          appleMusic:
-            "https://music.apple.com/us/artist/pilotless-drone/591983497",
+          appleMusic: "https://music.apple.com/us/album/pull-single/1543491666",
           googleMusic:
             "https://music.youtube.com/playlist?list=OLAK5uy_kur99kpVth5mKZQAoF2V74fJADv57uEfo",
           soundcloud: "https://soundcloud.com/pilotlessdrone/pull",
@@ -851,7 +1024,7 @@ export const bands = {
         },
       },
       {
-        date: parseDateString("2023-12-01"),
+        date: parseDateString("2023-12-16"),
         name: "Appetite (IRIS cover)",
         urls: {
           soundcloud: "https://soundcloud.com/pilotlessdrone/appetite",
@@ -922,7 +1095,7 @@ export const bands = {
     name: "Pinwurm",
     tracks: [
       {
-        date: parseDateString("2020-01-01"),
+        date: parseDateString("2020-04-06"),
         image: "/images/tracks/pinwurm-away-from-home.jpeg",
         name: "Away from Home",
         urls: {
@@ -956,10 +1129,10 @@ export const bands = {
         },
       },
       {
-        date: parseDateString("2021-01-01"),
+        date: parseDateString("2019-03-21"),
         name: "It's no Good (Depeche Mode cover)",
         urls: {
-          spotify:
+          soundcloud:
             "https://soundcloud.com/pinwurm/its-no-good-depeche-mode-cover",
         },
       },

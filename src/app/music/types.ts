@@ -7,6 +7,9 @@ export type Urls = {
 };
 
 export type Song = {
+  // Other credited artists, in credit order (excluding the band itself)
+  // For a feature, the first artist is the one who released the song
+  artists?: string[];
   date: Date;
   image?: string;
   name: string;
@@ -30,6 +33,8 @@ export type BandMember = {
 export type Band = {
   albums: { [id: string]: Album };
   description: string[];
+  // Songs released by other artists that feature this band
+  features?: Song[];
   genre: string;
   image: string;
   members: BandMember[];
